@@ -14,19 +14,22 @@ public abstract class Person
         }
     }
 
+    public const int minAge = 16;
+    public const int maxAge = 118;
+
     private int m_Age = -1;  // backing field
     public int Age      // ENCAPSULATION
     {
         get { return m_Age; }
         set
         {
-            if (value < 16)
+            if (value < minAge)
             {
-                Debug.Log("Our team members must be 16 years old at least...");
+                Debug.Log("Our team members must be " + minAge + " years old at least...");
             }
-            else if (value > 118)
+            else if (value > maxAge)
             {
-                Debug.Log("The oldest living person is 118 years old...");
+                Debug.Log("The oldest living person is " + maxAge + " years old...");
             }
             else
             {

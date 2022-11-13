@@ -11,9 +11,10 @@ public class TeamManager : MonoBehaviour
     public GameObject titlePanel;
     public GameObject mainPanel;
     public GameObject dataIntroPanel;
-    public Button hireButton;
+    public Button hireNewMemberButton;
     public Button introduceMembersButton;
     public Button letsWorkButton;
+    public Button hireButton;
 
     public GameObject[] panels;
     public RawImage[] photos;
@@ -30,17 +31,15 @@ public class TeamManager : MonoBehaviour
     List<Person> team = new List<Person>();
     public int maxTeamCount = 5;
 
+    // ------------------- Functions used in the Title panel -------------------
+
     public void CloseTitlePanel()
     {
         titlePanel.SetActive(false);
         mainPanel.SetActive(true);
     }
 
-    public void CloseDataIntroPanel()
-    {
-        dataIntroPanel.SetActive(false);
-        mainPanel.SetActive(true);
-    }
+    // ------------------- Functions used in the Main panel --------------------
 
     public void OpenDataIntroPanel()
     {
@@ -49,9 +48,117 @@ public class TeamManager : MonoBehaviour
         teamMemberName.text = "Name: ";
         teamMemberAge.text = "Age: ";
         teamMemberRole.value = 0;
+        hireButton.interactable = false;
 
         mainPanel.SetActive(false);
         dataIntroPanel.SetActive(true);
+    }
+
+    public void IntroduceMembers()
+    {
+        int n;
+
+        for (n = 0; n < team.Count; n++)
+        {
+            IntroduceMember(n);
+        }
+    }
+
+    void IntroduceMember(int n)
+    {
+        responses[n].text = team[n].IntroduceYourself();
+    }
+
+    public void LetsWork()
+    {
+        int n;
+
+        for (n = 0; n < team.Count; n++)
+        {
+            LetsWorkMember(n);
+        }
+    }
+
+    void LetsWorkMember(int n)
+    {
+        responses[n].text = team[n].Work();
+    }
+
+    public void Fire(int n)
+    {
+        team.RemoveAt(n);
+
+        HideAllMembers();
+        DisplayAllMembers();
+
+        hireNewMemberButton.interactable = true;
+        if (team.Count == 0)
+        {
+            introduceMembersButton.interactable = false;
+            letsWorkButton.interactable = false;
+        }
+    }
+
+    void HideAllMembers()
+    {
+        int n;
+
+        for (n = 0; n < maxTeamCount; n++)
+        {
+            panels[n].SetActive(false);
+        }
+    }
+
+    void DisplayAllMembers()
+    {
+        int n;
+
+        for (n = 0; n < team.Count; n++)
+        {
+            DisplayMember(n);
+        }
+    }
+
+    void DisplayMember(int n)
+    {
+        panels[n].SetActive(true);
+        photos[n].texture = team[n].Photo;
+        names[n].text = team[n].Name;
+        ages[n].text = team[n].Age.ToString();
+        responses[n].text = "";
+    }
+
+    // ---------------- Functions used in the Data intro panel -----------------
+
+    public void CloseDataIntroPanel()
+    {
+        dataIntroPanel.SetActive(false);
+        mainPanel.SetActive(true);
+    }
+
+    public void CheckAge()
+    {
+        string ageString;
+        int ageNumber;
+
+        ageString = teamMemberAge.text;
+        if (int.TryParse(ageString, out ageNumber))
+        {
+            // The string has a number format, let's check the bounds
+            if (ageNumber >= Person.minAge && ageNumber <= Person.maxAge)
+            {
+                hireButton.interactable = true;
+            }
+            else
+            {
+                Debug.Log("The age is out of bounds: " + ageNumber);
+            }
+        }
+        else
+        {
+            hireButton.interactable = false;
+            Debug.Log("The age has not a number format");
+        }
     }
 
     public void SelectImage(BaseEventData eventData)
@@ -119,83 +226,10 @@ public class TeamManager : MonoBehaviour
 
         if (team.Count >= maxTeamCount)
         {
-            hireButton.interactable = false;
+            hireNewMemberButton.interactable = false;
         }
         introduceMembersButton.interactable = true;
         letsWorkButton.interactable = true;
     }
 
-    public void IntroduceMembers()
-    {
-        int n;
-
-        for (n = 0; n < team.Count; n++)
-        {
-            IntroduceMember(n);
-        }
-    }
-
-    void IntroduceMember(int n)
-    {
-        responses[n].text = team[n].IntroduceYourself();
-    }
-
-    public void LetsWork()
-    {
-        int n;
-
-        for (n = 0; n < team.Count; n++)
-        {
-            LetsWorkMember(n);
-        }
-    }
-
-    void LetsWorkMember(int n)
-    {
-        responses[n].text = team[n].Work();
-    }
-
-    public void Fire (int n)
-    {
-        team.RemoveAt(n);
-
-        HideAllMembers();
-        DisplayAllMembers();
-
-        hireButton.interactable = true;
-        if (team.Count == 0)
-        {
-            introduceMembersButton.interactable = false;
-            letsWorkButton.interactable = false;
-        }
-    }
-
-    void HideAllMembers()
-    {
-        int n;
-
-        for(n=0; n < maxTeamCount; n++)
-        {
-            panels[n].SetActive(false);
-        }
-    }
-
-    void DisplayAllMembers()
-    {
-        int n;
-
-        for (n = 0; n < team.Count; n++)
-        {
-            DisplayMember(n);
-        }
-    }
-
-    void DisplayMember(int n)
-    {
-        panels[n].SetActive(true);
-        photos[n].texture = team[n].Photo;
-        names[n].text = team[n].Name;
-        ages[n].text = team[n].Age.ToString();
-        responses[n].text = "";
-    }
 }

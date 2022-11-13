@@ -3672,9 +3672,10 @@ MonoBehaviour:
   titlePanel: {fileID: 1598970060}
   mainPanel: {fileID: 1037679506}
   dataIntroPanel: {fileID: 146480707}
-  hireButton: {fileID: 1911141842}
+  hireNewMemberButton: {fileID: 1911141842}
   introduceMembersButton: {fileID: 1511968873}
   letsWorkButton: {fileID: 1250521486}
+  hireButton: {fileID: 750609782}
   panels:
   - {fileID: 2069514212}
   - {fileID: 240891022}
@@ -4352,7 +4353,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 750609783}
   m_OnClick:
     m_PersistentCalls:
@@ -7584,7 +7585,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 641480013}
+        m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
+        m_MethodName: CheckAge
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
