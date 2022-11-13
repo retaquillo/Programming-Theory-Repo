@@ -350,8 +350,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 146480711}
-          m_TargetAssemblyTypeName: DataIntro, Assembly-CSharp
+        - m_Target: {fileID: 641480013}
+          m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
           m_MethodName: SelectImage
           m_Mode: 0
           m_Arguments:
@@ -414,7 +414,6 @@ GameObject:
   - component: {fileID: 146480708}
   - component: {fileID: 146480710}
   - component: {fileID: 146480709}
-  - component: {fileID: 146480711}
   m_Layer: 5
   m_Name: Data intro panel
   m_TagString: Untagged
@@ -498,19 +497,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146480707}
   m_CullTransparentMesh: 1
---- !u!114 &146480711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 146480707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae92192f8a8b4f73a026484cda96cdd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  teamMemberImage: {fileID: 1791612912}
 --- !u!1 &147572612
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,12 +507,12 @@ GameObject:
   m_Component:
   - component: {fileID: 147572613}
   m_Layer: 5
-  m_Name: Member 4
+  m_Name: Member 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &147572613
 RectTransform:
   m_ObjectHideFlags: 0
@@ -642,7 +628,7 @@ GameObject:
   - component: {fileID: 168983265}
   - component: {fileID: 168983264}
   m_Layer: 5
-  m_Name: Response
+  m_Name: Response 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -688,9 +674,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hi, I am a programmer
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -779,7 +763,7 @@ GameObject:
   - component: {fileID: 179278253}
   - component: {fileID: 179278252}
   m_Layer: 5
-  m_Name: Age
+  m_Name: Age 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1049,7 +1033,7 @@ GameObject:
   - component: {fileID: 213507580}
   - component: {fileID: 213507579}
   m_Layer: 5
-  m_Name: Age
+  m_Name: Age 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1182,12 +1166,12 @@ GameObject:
   m_Component:
   - component: {fileID: 240891023}
   m_Layer: 5
-  m_Name: Member 2
+  m_Name: Member 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &240891023
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1227,7 +1211,7 @@ GameObject:
   - component: {fileID: 254861689}
   - component: {fileID: 254861688}
   m_Layer: 5
-  m_Name: Age
+  m_Name: Age 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1442,8 +1426,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 146480711}
-          m_TargetAssemblyTypeName: DataIntro, Assembly-CSharp
+        - m_Target: {fileID: 641480013}
+          m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
           m_MethodName: SelectImage
           m_Mode: 0
           m_Arguments:
@@ -1846,7 +1830,7 @@ GameObject:
   - component: {fileID: 309933254}
   - component: {fileID: 309933253}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Fire 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1916,7 +1900,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 309933254}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 641480013}
+        m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
+        m_MethodName: Fire
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &309933254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2757,7 +2753,7 @@ GameObject:
   - component: {fileID: 512569513}
   - component: {fileID: 512569512}
   m_Layer: 5
-  m_Name: Response
+  m_Name: Response 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2803,7 +2799,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hi, I am a programmer
+  m_text: '
 
 '
   m_isRightToLeft: 0
@@ -3389,8 +3385,6 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Project Manaqer
       m_Image: {fileID: 0}
-    - m_Text: Project Manaqer
-      m_Image: {fileID: 0}
     - m_Text: Q/A Technician
       m_Image: {fileID: 0}
   m_OnValueChanged:
@@ -3447,7 +3441,7 @@ GameObject:
   - component: {fileID: 618798165}
   - component: {fileID: 618798164}
   m_Layer: 5
-  m_Name: Name
+  m_Name: Name 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3678,6 +3672,44 @@ MonoBehaviour:
   titlePanel: {fileID: 1598970060}
   mainPanel: {fileID: 1037679506}
   dataIntroPanel: {fileID: 146480707}
+  hireButton: {fileID: 1911141842}
+  introduceMembersButton: {fileID: 1511968873}
+  letsWorkButton: {fileID: 1250521486}
+  panels:
+  - {fileID: 2069514212}
+  - {fileID: 240891022}
+  - {fileID: 1226508031}
+  - {fileID: 147572612}
+  - {fileID: 1529058415}
+  photos:
+  - {fileID: 1978024353}
+  - {fileID: 1008726087}
+  - {fileID: 642725593}
+  - {fileID: 1492543085}
+  - {fileID: 1780159071}
+  names:
+  - {fileID: 1234259589}
+  - {fileID: 1129552941}
+  - {fileID: 2028979746}
+  - {fileID: 618798164}
+  - {fileID: 979301817}
+  ages:
+  - {fileID: 1315986851}
+  - {fileID: 254861688}
+  - {fileID: 179278252}
+  - {fileID: 213507579}
+  - {fileID: 755340792}
+  responses:
+  - {fileID: 168983264}
+  - {fileID: 512569512}
+  - {fileID: 1544460874}
+  - {fileID: 1266591767}
+  - {fileID: 2031420747}
+  teamMemberImage: {fileID: 1791612912}
+  teamMemberName: {fileID: 951764456}
+  teamMemberAge: {fileID: 1269058444}
+  teamMemberRole: {fileID: 610929149}
+  maxTeamCount: 5
 --- !u!4 &641480014
 Transform:
   m_ObjectHideFlags: 0
@@ -3705,7 +3737,7 @@ GameObject:
   - component: {fileID: 642725594}
   - component: {fileID: 642725593}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Photo 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3949,8 +3981,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 146480711}
-          m_TargetAssemblyTypeName: DataIntro, Assembly-CSharp
+        - m_Target: {fileID: 641480013}
+          m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
           m_MethodName: SelectImage
           m_Mode: 0
           m_Arguments:
@@ -4188,8 +4220,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 146480711}
-          m_TargetAssemblyTypeName: DataIntro, Assembly-CSharp
+        - m_Target: {fileID: 641480013}
+          m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
           m_MethodName: SelectImage
           m_Mode: 0
           m_Arguments:
@@ -4320,11 +4352,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 750609783}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 641480013}
+        m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
+        m_MethodName: Hire
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &750609783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4375,7 +4419,7 @@ GameObject:
   - component: {fileID: 755340793}
   - component: {fileID: 755340792}
   m_Layer: 5
-  m_Name: Age
+  m_Name: Age 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4725,8 +4769,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 146480711}
-          m_TargetAssemblyTypeName: DataIntro, Assembly-CSharp
+        - m_Target: {fileID: 641480013}
+          m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
           m_MethodName: SelectImage
           m_Mode: 0
           m_Arguments:
@@ -4791,7 +4835,7 @@ GameObject:
   - component: {fileID: 924870652}
   - component: {fileID: 924870651}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Fire 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4861,7 +4905,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 924870652}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 641480013}
+        m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
+        m_MethodName: Fire
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &924870652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5463,7 +5519,7 @@ GameObject:
   - component: {fileID: 979301818}
   - component: {fileID: 979301817}
   m_Layer: 5
-  m_Name: Name
+  m_Name: Name 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5732,7 +5788,7 @@ GameObject:
   - component: {fileID: 1008726088}
   - component: {fileID: 1008726087}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Photo 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6141,8 +6197,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 146480711}
-          m_TargetAssemblyTypeName: DataIntro, Assembly-CSharp
+        - m_Target: {fileID: 641480013}
+          m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
           m_MethodName: SelectImage
           m_Mode: 0
           m_Arguments:
@@ -6260,7 +6316,7 @@ GameObject:
   - component: {fileID: 1093357533}
   - component: {fileID: 1093357532}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Fire 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6330,7 +6386,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1093357533}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 641480013}
+        m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
+        m_MethodName: Fire
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1093357533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6461,8 +6529,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 146480711}
-          m_TargetAssemblyTypeName: DataIntro, Assembly-CSharp
+        - m_Target: {fileID: 641480013}
+          m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
           m_MethodName: SelectImage
           m_Mode: 0
           m_Arguments:
@@ -6682,7 +6750,7 @@ GameObject:
   - component: {fileID: 1129552942}
   - component: {fileID: 1129552941}
   m_Layer: 5
-  m_Name: Name
+  m_Name: Name 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6897,8 +6965,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 146480711}
-          m_TargetAssemblyTypeName: DataIntro, Assembly-CSharp
+        - m_Target: {fileID: 641480013}
+          m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
           m_MethodName: SelectImage
           m_Mode: 0
           m_Arguments:
@@ -6960,12 +7028,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1226508032}
   m_Layer: 5
-  m_Name: Member 3
+  m_Name: Member 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1226508032
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7005,7 +7073,7 @@ GameObject:
   - component: {fileID: 1234259590}
   - component: {fileID: 1234259589}
   m_Layer: 5
-  m_Name: Name
+  m_Name: Name 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7207,11 +7275,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1250521487}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 641480013}
+        m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
+        m_MethodName: LetsWork
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1250521487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7262,7 +7342,7 @@ GameObject:
   - component: {fileID: 1266591768}
   - component: {fileID: 1266591767}
   m_Layer: 5
-  m_Name: Response
+  m_Name: Response 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7308,9 +7388,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hi, I am a programmer
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7792,8 +7870,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 146480711}
-          m_TargetAssemblyTypeName: DataIntro, Assembly-CSharp
+        - m_Target: {fileID: 641480013}
+          m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
           m_MethodName: SelectImage
           m_Mode: 0
           m_Arguments:
@@ -7857,7 +7935,7 @@ GameObject:
   - component: {fileID: 1315986852}
   - component: {fileID: 1315986851}
   m_Layer: 5
-  m_Name: Age
+  m_Name: Age 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8207,8 +8285,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 146480711}
-          m_TargetAssemblyTypeName: DataIntro, Assembly-CSharp
+        - m_Target: {fileID: 641480013}
+          m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
           m_MethodName: SelectImage
           m_Mode: 0
           m_Arguments:
@@ -8732,7 +8810,7 @@ GameObject:
   - component: {fileID: 1492543086}
   - component: {fileID: 1492543085}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Photo 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8872,11 +8950,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1511968874}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 641480013}
+        m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
+        m_MethodName: IntroduceMembers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1511968874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8925,12 +9015,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1529058416}
   m_Layer: 5
-  m_Name: Member 5
+  m_Name: Member 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1529058416
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9107,7 +9197,7 @@ GameObject:
   - component: {fileID: 1544460875}
   - component: {fileID: 1544460874}
   m_Layer: 5
-  m_Name: Response
+  m_Name: Response 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9153,9 +9243,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hi, I am a programmer
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9588,7 +9676,7 @@ GameObject:
   - component: {fileID: 1636149141}
   - component: {fileID: 1636149140}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Fire 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9658,7 +9746,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1636149141}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 641480013}
+        m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
+        m_MethodName: Fire
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1636149141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10116,7 +10216,7 @@ GameObject:
   - component: {fileID: 1780159072}
   - component: {fileID: 1780159071}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Photo 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11059,7 +11159,7 @@ GameObject:
   - component: {fileID: 1978024354}
   - component: {fileID: 1978024353}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Photo 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11212,8 +11312,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 146480711}
-          m_TargetAssemblyTypeName: DataIntro, Assembly-CSharp
+        - m_Target: {fileID: 641480013}
+          m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
           m_MethodName: SelectImage
           m_Mode: 0
           m_Arguments:
@@ -11357,8 +11457,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 146480711}
-          m_TargetAssemblyTypeName: DataIntro, Assembly-CSharp
+        - m_Target: {fileID: 641480013}
+          m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
           m_MethodName: SelectImage
           m_Mode: 0
           m_Arguments:
@@ -11422,7 +11522,7 @@ GameObject:
   - component: {fileID: 2028979747}
   - component: {fileID: 2028979746}
   m_Layer: 5
-  m_Name: Name
+  m_Name: Name 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11557,7 +11657,7 @@ GameObject:
   - component: {fileID: 2031420748}
   - component: {fileID: 2031420747}
   m_Layer: 5
-  m_Name: Response
+  m_Name: Response 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11603,9 +11703,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hi, I am a programmer
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11695,7 +11793,7 @@ GameObject:
   - component: {fileID: 2043004045}
   - component: {fileID: 2043004044}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Fire 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11765,7 +11863,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2043004045}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 641480013}
+        m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
+        m_MethodName: Fire
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2043004045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11948,12 +12058,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2069514213}
   m_Layer: 5
-  m_Name: Member 1
+  m_Name: Member 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2069514213
 RectTransform:
   m_ObjectHideFlags: 0

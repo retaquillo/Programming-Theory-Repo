@@ -2,16 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Person : MonoBehaviour
+public abstract class Person
 {
     private string m_Name = "Name not set";  // backing field
-    public string Name { get; private set; }    // ENCAPSULATION
+    public string Name  // ENCAPSULATION
+    {
+        get { return m_Name; }
+        set
+        {
+            m_Name = value;
+        }
+    }
 
     private int m_Age = -1;  // backing field
     public int Age      // ENCAPSULATION
     {
         get { return m_Age; }
-        private set
+        set
         {
             if (value < 16)
             {
@@ -26,6 +33,23 @@ public abstract class Person : MonoBehaviour
                 m_Age = value;
             }
         }
+    }
+
+    private Texture m_Photo = null;
+    public Texture Photo  // ENCAPSULATION
+    {
+        get { return m_Photo; }
+        set
+        {
+            m_Photo = value;
+        }
+    }
+
+    public Person()
+    {
+        this.m_Name = "Name not set";
+        this.m_Age = -1;
+        this.m_Photo = null;
     }
 
     public abstract string Work();   // ABSTRACTION

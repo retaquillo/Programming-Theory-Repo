@@ -6,7 +6,7 @@ public class AudioArtist : Person    // INHERITANCE
 {
     public override string Work()   // POLYMORPHISM
     {
-        return ("I'll show some astonishing sound effects.");
+        return ("I'll make some astonishing sound effects.");
     }
 
     public override string IntroduceYourself()  // POLYMORPHISM
